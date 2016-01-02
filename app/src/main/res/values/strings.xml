@@ -61,4 +61,5 @@
 
     <string name="pref_title_vibrate">Vibrate</string>
     <string name="title_activity_settings_menu">SettingsMenu</string>
+    <string name="title_activity_bluetooth">Memi BT</string>
 </resources>
