@@ -44,15 +44,6 @@ public class LogoView extends AppCompatActivity {
                startActivity(intent);
             }
         });
-
-        //testing here:
-        but = (Button) findViewById(R.id.btnOk);
-        but.setOnClickListener(new View.OnClickListener(){
-            public void onClick(View v){
-                but.setText("hi fuck");
-            }
-        });
-
         //
         client = new GoogleApiClient.Builder(this).addApi(AppIndex.API).build();
     }

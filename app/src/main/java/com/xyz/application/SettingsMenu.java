@@ -16,9 +16,6 @@ import com.google.android.gms.common.api.GoogleApiClient;
 public class SettingsMenu extends AppCompatActivity {
 
 
-    Button but;
-
-
     /**
      * ATTENTION: This was auto-generated to implement the App Indexing API.
      * See https://g.co/AppIndexing/AndroidStudio for more information.
@@ -36,39 +33,13 @@ public class SettingsMenu extends AppCompatActivity {
         //don't touch this
         //
 
-        but = (Button) findViewById(R.id.button2);
 
-
-        TextView hi = (TextView) findViewById(R.id.textView2);
-        hi.setText("KJJLK");
-        hi.setTextColor(Color.parseColor("red"));
-        hi.invalidate();
-
-
-        but.setOnClickListener(new View.OnClickListener()  {
-            @Override
-            public void onClick(View v) {
-                Intent changeback = new Intent(SettingsMenu.this, LogoView.class);
-                startActivity(changeback);
-
-
-                /*testmethod(but);
-                but.setText("jailbreak");
-                but.refreshDrawableState();
-
-                TextView hi = (TextView) findViewById(R.id.textView2);
-                hi.setText("KJJLK");
-                hi.setTextColor(Color.parseColor("red"));
-                hi.invalidate();*/
-
-            }
-        });
     }
-    public void testmethod(Button button){
+  /*  public void testmethod(Button button){
         button.setBackgroundColor(Color.parseColor("white"));
         button.setText("I like pizza!");
 
-    }
+    }*/
     @Override
     public void onStart() {
         super.onStart();
@@ -87,7 +58,39 @@ public class SettingsMenu extends AppCompatActivity {
                 Uri.parse("android-app://com.xyz.application/http/host/path")
         );
         AppIndex.AppIndexApi.start(client, viewAction);
+
+
+        final Button but = (Button) findViewById(R.id.button1);
+
+        but.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                //test for sanity!
+                /*TextView hi = (TextView) findViewById(R.id.textView2);
+                if(hi.getText() == "fuck"){
+                    hi.setText("penis");
+                }else{
+                    hi.setText("fuck");
+                }*/
+                setContentView(R.layout.colorchoice_settingsview);
+                TextView title = (TextView) findViewById(R.id.colorchoicelabel);
+                String notificationname = (String) but.getText();
+                title.setText("Choose a color for " + notificationname.toLowerCase() + " notifications");
+                final Button checkcolor = (Button) findViewById(R.id.testbutton);
+                checkcolor.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        changeLayout();
+                    }
+                });
+            }
+        });
+
     }
+    private void changeLayout(){
+        setContentView(R.layout.settingsview);
+    }
+
 
     @Override
     public void onStop() {

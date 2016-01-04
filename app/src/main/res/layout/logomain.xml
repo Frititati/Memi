@@ -41,11 +41,5 @@
         android:enabled="true"
         android:gravity="center|center_horizontal"
         android:textSize="@dimen/logo_size"/>
-    <Button
-        android:id="@+id/btnOk"
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:text="OK"/>
 
 </RelativeLayout>

@@ -7,4 +7,5 @@
     <dimen name="logo_pic_size">145dp</dimen>
     <dimen name="settings_options_size">25dp</dimen>
     <dimen name="settings_pic_size">80dp</dimen>
+    <dimen name="colorchoice_size">90dp</dimen>
 </resources>
