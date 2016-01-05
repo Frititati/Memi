@@ -34,12 +34,11 @@
 
             <Button
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="80dp"
                 android:text="PERSONAL"
                 android:textSize="@dimen/logo_size"
-                android:id="@+id/button1"
-                android:drawableLeft="@drawable/icon_clock3"
-                android:background="@color/redtest"/>
+                android:id="@+id/personalbuttonset"
+                android:drawableLeft="@drawable/icon_clock3"/>
         </LinearLayout>
 
         <LinearLayout
@@ -50,12 +49,11 @@
 
             <Button
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="80dp"
                 android:text="FAMILY"
                 android:textSize="@dimen/logo_size"
-                android:id="@+id/button2"
-                android:drawableLeft="@drawable/icon_clock3"
-                android:background="@color/bluetest"/>
+                android:id="@+id/familybuttonset"
+                android:drawableLeft="@drawable/icon_clock3"/>
         </LinearLayout>
 
         <LinearLayout
@@ -66,12 +64,11 @@
 
             <Button
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="80dp"
                 android:text="WORK"
                 android:textSize="@dimen/logo_size"
-                android:id="@+id/button3"
-                android:drawableLeft="@drawable/icon_clock3"
-                android:background="@color/yellowtest"/>
+                android:id="@+id/workbuttonset"
+                android:drawableLeft="@drawable/icon_clock3"/>
         </LinearLayout>
 
         <LinearLayout
@@ -82,12 +79,11 @@
 
             <Button
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="80dp"
                 android:text="SCHOOL"
                 android:textSize="@dimen/logo_size"
-                android:id="@+id/button4"
-                android:drawableLeft="@drawable/icon_clock3"
-                android:background="@color/orangetest"/>
+                android:id="@+id/schoolbuttonset"
+                android:drawableLeft="@drawable/icon_clock3"/>
         </LinearLayout>
 
         <LinearLayout
@@ -98,12 +94,11 @@
 
             <Button
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="80dp"
                 android:text="BIRTHDAYS"
                 android:textSize="@dimen/logo_size"
-                android:id="@+id/button5"
-                android:drawableLeft="@drawable/icon_clock3"
-                android:background="@color/greentest"/>
+                android:id="@+id/birthdaysbuttonset"
+                android:drawableLeft="@drawable/icon_clock3"/>
         </LinearLayout>
 
         <LinearLayout
@@ -114,12 +109,11 @@
 
             <Button
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="80dp"
                 android:text="OTHER"
                 android:textSize="@dimen/logo_size"
-                android:id="@+id/button6"
-                android:drawableLeft="@drawable/icon_clock3"
-                android:background="@color/bluetest"/>
+                android:id="@+id/otherbuttonset"
+                android:drawableLeft="@drawable/icon_clock3"/>
         </LinearLayout>
     </LinearLayout>
 </RelativeLayout>

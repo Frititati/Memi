@@ -16,61 +16,55 @@
         android:textColor="@color/black"
         android:textSize="@dimen/logo_size"/>
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/colorchoicered"
-        android:background="@color/redtest"
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:layout_below="@+id/colorchoicelabel"
+        android:id="@+id/colorchoicegroup"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:height="@dimen/colorchoice_size"/>
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/colorchoiceblue"
-        android:background="@color/bluetest"
-        android:layout_below="@+id/colorchoicered"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:height="@dimen/colorchoice_size"/>
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/colorchoicegreen"
-        android:background="@color/greentest"
-        android:layout_below="@+id/colorchoiceblue"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:height="@dimen/colorchoice_size"/>
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/colorchoiceorange"
-        android:background="@color/orangetest"
-        android:layout_below="@+id/colorchoicegreen"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:height="@dimen/colorchoice_size"/>
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/colorchoiceyellow"
-        android:background="@color/yellowtest"
-        android:layout_below="@+id/colorchoiceorange"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:height="@dimen/colorchoice_size" />
+        android:layout_alignParentStart="true">
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:id="@+id/radioButtonred"
+            android:layout_gravity="center"
+            android:background="@color/redtest"
+            android:textColor="@color/redtest"
+            android:text="@color/redtest"/>
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:id="@+id/radioButtonblue"
+            android:background="@color/bluetest"
+            android:textColor="@color/bluetest"
+            android:text="@color/bluetest"/>
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:id="@+id/radioButtonyellow"
+            android:background="@color/yellowtest"
+            android:textColor="@color/yellowtest"
+            android:text="@color/yellowtest"/>
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:id="@+id/radioButtongreen"
+            android:background="@color/greentest"
+            android:textColor="@color/greentest"
+            android:text="@color/greentest"/>
+
+        <RadioButton
+            android:layout_width="401dp"
+            android:layout_height="70dp"
+            android:id="@+id/radioButtonorange"
+            android:background="@color/orangetest"
+            android:textColor="@color/orangetest"
+            android:text="@color/orangetest"/>
+    </RadioGroup>
 
     <Button
         android:layout_width="wrap_content"
